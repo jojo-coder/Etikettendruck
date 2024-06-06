@@ -15,7 +15,7 @@ Erstellung einer virtuellen Umgebung und Installation der benötigten Module `qr
 
 ```
 python -m venv etiketten
-source bin/activate
+source venv/bin/activate
 pip install qrcode, reportlab
 ```
 # Ausführung
