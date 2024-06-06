@@ -14,8 +14,8 @@ Zur Erzeugung der qr-Codes wird das Modul `qrcode` verwendet. Die Erstellung ein
 Erstellung einer virtuellen Umgebung und Installation der benötigten Module `qrcode` und `reportlab`:
 
 ```
-python -m venv etiketten
-source venv/bin/activate
+python -m venv Eti_venv
+source Eti_venv/bin/activate
 pip install qrcode, reportlab
 ```
 # Ausführung
