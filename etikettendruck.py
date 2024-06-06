@@ -17,6 +17,7 @@
 #
 # (c)2024 Dr. Joachim Burbach
 #----------------------------------------------------------------------------------------
+import os
 import qrcode
 from reportlab.lib.pagesizes import portrait, A4
 from reportlab.pdfgen import canvas
@@ -70,6 +71,7 @@ def generate_labels(start_asn, filename, draw_border=False):
                         margin_y+qr_code_ypos+j*(label_height+delty_y), 
                         width=10*mm, 
                         height=10*mm)
+            os.remove(output_dir+qr_code_filename)
             c.drawString(margin_x+text_xpos+i*(label_width+delta_x), 
                          margin_y+text_ypos+j*(label_height+delty_y), 
                          text)

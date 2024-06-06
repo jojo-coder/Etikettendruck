@@ -1,6 +1,6 @@
 # Motivation
 
-In der Zeitschrift c't 9/2024 wird das Dokumentenmanagementsystem paperless-ngx vorgestellt. Ich habe dieses auf einem Linuxserver installiert und nutze es nun zur Archivierung von Schriftstücken aller Art.
+In der Zeitschrift c't 9/2024 wird das Dokumentenmanagementsystem paperless-ngx vorgestellt. Dieses wurde auf einem Linuxserver installiert und wird nun zur Archivierung von Schriftstücken aller Art genutzt.
 
 Um Originaldokumente aufzubewahren, wird empfohlen, auf diesen einen Barcode mit einer eindeutigen Nummer (ASN, archive serial number) aufzukleben. Die Schriftstücke können dann in einer Ablage gestapelt werden. Der Barcode wird von paperless-ngx ausgelesen und den Metadaten des eingescannten Schriftstückes hinzugefügt. So kann man später ohne großen Aufwand das Original anhand der ASN in der Ablage wieder finden.
 
@@ -25,8 +25,8 @@ Wichtig: Vor dem Start des Skriptes Anpassung der Startvariablen für die ASN un
 
 Die erzeugte PDF-Datei kann dann über einen PDF-Viewer oder direkt auf einen Drucker geschickt werden. Vor dem richtigen Druck auf das Etikettenpapier sollte man einen Probedruck auf Normalpapier machen. Dann u.U. die Druckparameter oder die Programmparameter im Skript gegebenfalls anpassen.
 
-Eine PDF-Datei ist diesem Repository beigefügt. Sie wurde von mir unter MacOS mit `Vorschau` auf einem Kyocera-Drucker bei einer Vergrößerung von 104% ausgegeben. Die Codes passten genau auf die 189 Etiketten.
+Eine PDF-Datei ist diesem Repository beigefügt. Sie wurde unter MacOS mit `Vorschau` auf einem Kyocera-Drucker bei einer Vergrößerung von 104% ausgegeben. Die Codes passten genau auf die 189 Etiketten.
 
 # Anmerkungen
 * Ich habe die erste ASN bei 10000 beginnen lassen. Dies ist m.E. optisch besser und bereitet keine Probleme bei etwaigen Sortierungen.
-* Das Modul `reportlab` setzt den Ursprung (0,0) des Canvas auf einer Seite auf unten links. Daher beginnen die Etiketten auch von unten links an zu zählen. Ist kein Problem, da man die Etiketten sowieso einzeln abzieht. Wen das stört: Entwickle einen Algorithmus, der die ASNs von oben links aus ansteigen lässt (Hausaufgabe, ;). 
+* Das Modul `reportlab` setzt den Ursprung (0,0) des Canvas auf einer Seite auf unten links. Daher beginnen die Etiketten auch von unten links an zu zählen. Ist kein Problem, da man die Etiketten sowieso einzeln abzieht. Wen das stört: Entwickle einen Algorithmus, der die ASNs von oben links aus ansteigen lässt (Hausaufgabe... ;). 
